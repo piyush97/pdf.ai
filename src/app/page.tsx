@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button";
 import {
+  FILE_UPLOAD,
   GO_TO_CHATS,
   HOME_SUBTITLE,
+  LOGIN_PROMPT,
   MADE_WITH_LOVE,
   PDF_AI,
 } from "@/lib/constants";
 import { UserButton, auth } from "@clerk/nextjs";
+import { LogIn } from "lucide-react";
 import Link from "next/link";
 
 export default async function Home() {
@@ -28,10 +31,12 @@ export default async function Home() {
           </p>
           <div className="w-full mt-4">
             {isAuth ? (
-              <h1>fileUpload</h1>
+              <h1>{FILE_UPLOAD}</h1>
             ) : (
               <Link href="/sign-in">
-                <Button>Login to get Started!</Button>
+                <Button>
+                  {LOGIN_PROMPT} <LogIn className="w-4 h-4 ml-2" />
+                </Button>
               </Link>
             )}
           </div>
