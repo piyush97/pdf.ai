@@ -1,6 +1,6 @@
+import FileUpload from "@/components/FileUpload";
 import { Button } from "@/components/ui/button";
 import {
-  FILE_UPLOAD,
   GO_TO_CHATS,
   HOME_SUBTITLE,
   LOGIN_PROMPT,
@@ -31,7 +31,7 @@ export default async function Home() {
           </p>
           <div className="w-full mt-4">
             {isAuth ? (
-              <h1>{FILE_UPLOAD}</h1>
+              <FileUpload />
             ) : (
               <Link href="/sign-in">
                 <Button>

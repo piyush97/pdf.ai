@@ -5,3 +5,4 @@ export const HOME_SUBTITLE =
 export const MADE_WITH_LOVE = " Made with 🖤 by Piyush Mehta";
 export const FILE_UPLOAD = "File Upload";
 export const LOGIN_PROMPT = "Login to upload PDFs";
+export const PDF_DROP_HELPER = "Drop PDF here!";
