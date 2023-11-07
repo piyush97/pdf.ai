@@ -12,7 +12,7 @@ import { LogIn } from "lucide-react";
 import Link from "next/link";
 
 export default async function Home() {
-  const { userId } = await auth();
+  const { userId } = auth();
   const isAuth = !!userId;
   return (
     <div className="w-screen min-h-screen bg-gradient-to-r from-teal-100 to-rose-100">
